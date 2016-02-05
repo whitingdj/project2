@@ -88,7 +88,6 @@ a:hover{
 }
 
 .bottom-name{
-	margin: 0;
 	font-size: 1.2em;
 }
 
@@ -217,7 +216,6 @@ LAYOUT CONTAINERS
 .bottom-name,
 .footer-nav li {
 	float: left;
-  	padding-right: 1em;
 	}
 
 .main-nav li,
