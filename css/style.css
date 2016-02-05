@@ -28,6 +28,14 @@ h3{
 	color: #222;
 }
 
+div h4{
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+
 
 img{
 	padding: 10px 15px;
@@ -35,6 +43,10 @@ img{
 }
 
 .profile-pic{
+}
+
+footer h4{
+	margin: 0;
 }
 
 footer li{
@@ -100,7 +112,11 @@ a:hover{
 .footer-nav li:nth-child(n+2){
 	display: none;
 }
-/* ---- Layout Containers ---- */
+
+
+/****************************
+LAYOUT CONTAINERS
+****************************/
 
 .main-header{
 	  padding-top: 1.5em;
@@ -122,13 +138,8 @@ a:hover{
 	padding: 2em 0;
 	text-align: center;
 	border: dotted 2px #bbb;
+	margin: 10px;
 }	
-
-.port{
-	width: 100%;
-	margin-bottom: 50px;
-}
-
 
 
 
@@ -148,7 +159,6 @@ a:hover{
 	float:right;
 	width:50%;
 	text-align: left;
-	vertical-align: top;
 	}
 
 .first-set,
@@ -165,7 +175,7 @@ a:hover{
 
 .bottom-name{
 	display: inline-block;
-	float: left
+	float: left;
 }
 
 .footer-nav{
@@ -193,7 +203,7 @@ a:hover{
 @media (min-width: 1025px) {
 
 .container{
-    width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     }
 
