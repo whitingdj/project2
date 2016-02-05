@@ -1,0 +1,239 @@
+/*****************************
+BASE STYLES
+*****************************/
+
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #888;
+	width: 100%;
+}
+
+h1,
+h4,
+.main-nav a,
+.footer-nav a{
+	font-family: 'Nunito', sans-serif;
+	color: #222;
+}
+
+h3{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #222;
+}
+
+
+img{
+	padding: 10px 15px;
+	width: 100%;
+}
+
+.profile-pic{
+}
+
+footer li{
+	padding: 10px;
+}
+
+footer a{
+	color: #111;
+}
+
+
+
+/****************************
+NAV LAYOUT 
+****************************/
+
+.name {
+ 	font-size: 2em;
+  	margin: 0;
+}
+
+.name a,
+.main-nav a,
+.bottom-name a,
+.footer-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+	color: #222;
+}
+
+a:visited,
+a:active{
+	color: #000;
+}
+
+a:hover{
+	color: #bbb;
+}
+
+.bottom-name{
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.footer-nav{
+	text-align: center;
+	padding: 10px 15px;
+	color: #222;
+	float: right;
+}
+
+.footer-nav li{
+	display: inline-block;
+}
+
+.bottom-name,
+.footer-nav li {
+	float: left;
+  	padding-right: 1em;
+	}
+
+.footer-nav li:nth-child(n+2){
+	display: none;
+}
+/* ---- Layout Containers ---- */
+
+.main-header{
+	  padding-top: 1.5em;
+	  padding-bottom: 1.5em;
+	  margin-bottom: 10px;
+}
+
+.container{
+	padding-left: 1em;
+	padding-right: 1em;
+ }
+
+.wrapper{
+	text-align: center;
+}
+
+.main-footer{
+	background: #ddd;
+	padding: 2em 0;
+	text-align: center;
+	border: dotted 2px #bbb;
+}	
+
+.port{
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+
+
+
+/******************************
+  Media Queries
+******************************/
+
+@media (min-width: 769px) {
+
+.main-nav li,
+.name{
+	display: inline-block;
+}
+
+.intro,
+.profile-pic{
+	float:right;
+	width:50%;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.first-set,
+.second-set,
+.third-set,
+.fourth-set,
+.fifth-set,
+.sixth-set,
+.seventh-set{
+	width: 50%;
+	float: left;
+	padding: 20px;
+  }
+
+.bottom-name{
+	display: inline-block;
+	float: left
+}
+
+.footer-nav{
+	float: right;
+}
+
+.footer-nav li:first-child{
+	display: none;
+}
+
+.footer-nav li:nth-child(n+2){
+	display: inline-block;
+}
+  
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    }
+
+.main-nav,
+.footer-nav {
+	float: right;
+	}
+
+.name,
+.main-nav li,
+.bottom-name,
+.footer-nav li {
+	float: left;
+  	padding-right: 1em;
+	}
+
+.main-nav li,
+.footer-nav li{
+	margin-left: 12px;
+    display: inline-block;
+	}
+
+.intro,
+.profile-pic{
+	float:right;
+	width:50%;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.first-set,
+.second-set,
+.third-set,
+.fourth-set,
+.fifth-set,
+.sixth-set,
+.seventh-set{
+	width: 33.33%;
+	float: left;
+	padding: 20px;
+  }
+
+}
